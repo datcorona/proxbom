@@ -1,6 +1,7 @@
 plugins {
     alias(libs.plugins.android.library)
     alias(libs.plugins.kotlin.android)
+    id("maven-publish") // Chỉ sử dụng maven-publish, bỏ java-platform
 }
 
 android {
@@ -9,7 +10,6 @@ android {
 
     defaultConfig {
         minSdk = 24
-
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         consumerProguardFiles("consumer-rules.pro")
     }
@@ -23,29 +23,46 @@ android {
             )
         }
     }
+
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_1_8
         targetCompatibility = JavaVersion.VERSION_1_8
     }
+
     kotlinOptions {
         jvmTarget = "1.8"
     }
 }
 
-dependencies {
-    constraints {
-        // Thêm danh sách các thư viện và phiên bản
-        api("com.squareup.retrofit2:retrofit:2.9.0")
-        api("com.squareup.okhttp3:okhttp:4.10.0")
-        api("androidx.core:core-ktx:1.10.1")
-        api("androidx.lifecycle:lifecycle-runtime-ktx:2.6.1")
+publishing {
+    publications {
+        create<MavenPublication>("mavenBom") {
+            groupId = "com.prox"
+            artifactId = "bom"
+            version = "1.0.0"
 
+//            afterEvaluate {
+//                from(components["release"]) // Thay "release" bằng "default"
+//            }
+        }
     }
+}
 
+dependencies {
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
     implementation(libs.material)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
+
+    constraints {
+        api("androidx.room:room-compiler:2.5.0")
+        api("androidx.room:room-ktx:2.5.0")
+        api(libs.retrofit.converter)
+        api(libs.glide)
+        api(libs.hilt.android.v247)
+        api(libs.circularSeekBar)
+        api(libs.rxjava)
+    }
 }

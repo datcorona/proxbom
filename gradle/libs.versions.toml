@@ -10,6 +10,65 @@ material = "1.12.0"
 activity = "1.10.1"
 constraintlayout = "2.2.1"
 
+activityKtxVersion = "1.5.1"
+androidGifDrawable = "1.2.25"
+androidNetworking = "1.0.2"
+annotationVersion = "1.3.0"
+appcompatVersion = "1.5.0"
+blurdialogfragmentVersion = "3.2.3"
+cameraCoreVersion = "1.3.0-alpha07"
+circleimageviewVersion = "3.1.0"
+circularSeekBar = "1.4.2"
+eglooVersion = "0.6.1"
+epmediaversion = "v1.0.1"
+espressoIntentsVersion = "3.3.0"
+exifinterfaceVersion = "1.3.3"
+exoplayerUi = "2.19.1"
+firebaseBomVersion = "31.0.2"
+firebaseCrashlyticsGradleVersion = "2.9.2"
+flycotablayoutVersion = "3.0.0"
+glid = "4.11.0"
+googleServicesVersion = "4.3.14"
+gradleMavenPublishPluginVersion = "0.17.0"
+gradleVersion = "7.3.0"
+hawkVersion = "2.0.1"
+hiltAndroidCompilerVersion = "2.47"
+hiltAndroidVersion = "2.47"
+kotlinGradlePluginVersion = "1.8.0"
+kotlinReflect = "1.8.0"
+kotlinStdlib = "1.8.21"
+kotlinStdlibJdk7Version = "1.8.0"
+kprogresshudVersion = "1.0.0"
+lifecycleCommonVersion = "2.3.1"
+markdownviewAndroidVersion = "1.1.1"
+moshi = "1.15.1"
+outlinetextviewVersion = "1.0.5"
+perfPluginVersion = "1.4.2"
+playServicesTasksVersion = "18.0.2"
+progressbarVersion = "v0.1.0"
+lifecycleLivedataKtx = "2.2.0"
+lottie = "6.0.0"
+materialVersion = "1.6.1"
+moshiVersion = "1.15.0"
+navigationfragmentktxversion = "2.5.3"
+okhttpInterceptorVersion = "4.9.0"
+proxUtilsMultipleMediationVersion = "3.0.5-release"
+retrofitVersion = "2.9.0"
+rxjavaVersion = "3.1.5"
+rxandroidVersion = "3.0.2"
+sdpAndroid = "1.1.0"
+utilsVersion = "1.2.9"
+roomCompilerVersion = "2.6.1"
+roomCommonVersion = "2.6.1"
+roomKtxVersion = "2.6.1"
+#navigationSafeArgsGradlePluginVersion = "2.8.3"
+gson = "2.10.1"
+xxpermissionsVersion = "18.6"
+playServicesLocationVersion = "21.3.0"
+annotationJvmVersion = "1.9.1"
+dynamicanimationKtxVersion = "1.0.0"
+
+
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
 junit = { group = "junit", name = "junit", version.ref = "junit" }
@@ -20,8 +79,88 @@ material = { group = "com.google.android.material", name = "material", version.r
 androidx-activity = { group = "androidx.activity", name = "activity", version.ref = "activity" }
 androidx-constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraintlayout" }
 
+
+blurdialogfragment = { module = "com.github.amanzan:BlurDialogFragment", version.ref = "blurdialogfragmentVersion" }
+flycotablayout = { module = "io.github.h07000223:flycoTabLayout", version.ref = "flycotablayoutVersion" }
+gson = { module = "com.google.code.gson:gson", version.ref = "gson"}
+markdownview-android = { module = "com.github.mukeshsolanki:MarkdownView-Android", version.ref = "markdownviewAndroidVersion" }
+material-v190 = { module = "com.google.android.material:material", version.ref = "material" }
+moshi-v1151 = { module = "com.squareup.moshi:moshi", version.ref = "moshi" }
+prox-utils-multiple-mediation = { module = "prox-lib:prox-utils-multiple-mediation", version.ref = "proxUtilsMultipleMediationVersion" }
+retrofit-converter = { module = "com.squareup.retrofit2:converter-gson" , version.ref = "retrofitVersion"}
+
+navigation-safe-args-gradle-plugin = { module = "androidx.navigation:navigation-safe-args-gradle-plugin", version.ref = "navigationfragmentktxversion" }
+
+android-gif-drawable = { module = "pl.droidsonroids.gif:android-gif-drawable", version.ref = "androidGifDrawable" }
+android-networking = { module = "com.amitshekhar.android:android-networking", version.ref = "androidNetworking" }
+androidx-activity-ktx = { module = "androidx.activity:activity-ktx", version.ref = "activityKtxVersion" }
+androidx-annotation = { module = "androidx.annotation:annotation", version.ref = "annotationVersion" }
+androidx-appcompat-v150 = { module = "androidx.appcompat:appcompat", version.ref = "appcompatVersion" }
+androidx-camera-camera2 = { module = "androidx.camera:camera-camera2", version.ref = "cameraCoreVersion" }
+androidx-camera-core = { module = "androidx.camera:camera-core", version.ref = "cameraCoreVersion" }
+androidx-camera-video = { module = "androidx.camera:camera-video", version.ref = "cameraCoreVersion" }
+androidx-camera-lifecycle = { module = "androidx.camera:camera-lifecycle", version.ref = "cameraCoreVersion" }
+androidx-camera-view = { module = "androidx.camera:camera-view", version.ref = "cameraCoreVersion" }
+androidx-espresso-contrib = { module = "androidx.test.espresso:espresso-contrib", version.ref = "espressoIntentsVersion" }
+androidx-espresso-idling-resource = { module = "androidx.test.espresso:espresso-idling-resource", version.ref = "espressoIntentsVersion" }
+androidx-exifinterface = { module = "androidx.exifinterface:exifinterface", version.ref = "exifinterfaceVersion" }
+androidx-lifecycle-common = { module = "androidx.lifecycle:lifecycle-common", version.ref = "lifecycleCommonVersion" }
+androidx-lifecycle-livedata-ktx = { module = "androidx.lifecycle:lifecycle-livedata-ktx", version.ref = "lifecycleLivedataKtx" }
+androidx-navigation-fragment-ktx = { module = "androidx.navigation:navigation-fragment-ktx", version.ref = "navigationfragmentktxversion" }
+androidx-navigation-ui-ktx = { module = "androidx.navigation:navigation-ui-ktx", version.ref = "navigationfragmentktxversion" }
+circleimageview = { module = "de.hdodenhof:circleimageview", version.ref = "circleimageviewVersion" }
+circularSeekBar = { module = "me.tankery.lib:circularSeekBar", version.ref = "circularSeekBar" }
+converter-moshi = { module = "com.squareup.retrofit2:converter-moshi", version.ref = "retrofitVersion" }
+dagger-hilt-compiler = { module = "com.google.dagger:hilt-compiler", version.ref = "hiltAndroidCompilerVersion" }
+egloo = { module = "com.otaliastudios.opengl:egloo", version.ref = "eglooVersion" }
+epmedia = { module = "com.github.yangjie10930:EpMedia", version.ref = "epmediaversion" }
+exoplayer = { module = "com.google.android.exoplayer:exoplayer", version.ref = "exoplayerUi" }
+exoplayer-ui = { module = "com.google.android.exoplayer:exoplayer-ui", version.ref = "exoplayerUi" }
+firebase-analytics-ktx = { module = "com.google.firebase:firebase-analytics-ktx" }
+firebase-bom = { module = "com.google.firebase:firebase-bom", version.ref = "firebaseBomVersion" }
+firebase-config-ktx = { module = "com.google.firebase:firebase-config-ktx" }
+firebase-crashlytics-gradle = { module = "com.google.firebase:firebase-crashlytics-gradle", version.ref = "firebaseCrashlyticsGradleVersion" }
+firebase-crashlytics-ktx = { module = "com.google.firebase:firebase-crashlytics-ktx" }
+firebase-database-ktx = { module = "com.google.firebase:firebase-database-ktx" }
+firebase-messaging-ktx = { module = "com.google.firebase:firebase-messaging-ktx" }
+firebase-perf-ktx = { module = "com.google.firebase:firebase-perf-ktx" }
+glide = { module = "com.github.bumptech.glide:glide", version.ref = "glid" }
+google-services = { module = "com.google.gms:google-services", version.ref = "googleServicesVersion" }
+gradle = { module = "com.android.tools.build:gradle", version.ref = "gradleVersion" }
+gradle-maven-publish-plugin = { module = "com.vanniktech:gradle-maven-publish-plugin", version.ref = "gradleMavenPublishPluginVersion" }
+hawk = { module = "com.orhanobut:hawk", version.ref = "hawkVersion" }
+hilt-android-gradle-plugin = { module = "com.google.dagger:hilt-android-gradle-plugin", version.ref = "hiltAndroidCompilerVersion" }
+hilt-android-v247 = { module = "com.google.dagger:hilt-android", version.ref = "hiltAndroidVersion" }
+jetbrains-kotlin-gradle-plugin = { module = "org.jetbrains.kotlin:kotlin-gradle-plugin", version.ref = "kotlinGradlePluginVersion" }
+jetbrains-kotlin-stdlib-jdk7 = { module = "org.jetbrains.kotlin:kotlin-stdlib-jdk7", version.ref = "kotlinStdlibJdk7Version" }
+
+
+kotlin-reflect = { module = "org.jetbrains.kotlin:kotlin-reflect", version.ref = "kotlinReflect" }
+kotlin-stdlib = { module = "org.jetbrains.kotlin:kotlin-stdlib", version.ref = "kotlinStdlib" }
+kprogresshud = { module = "io.github.rupinderjeet:kprogresshud", version.ref = "kprogresshudVersion" }
+moshi-kotlin-codegen = { module = "com.squareup.moshi:moshi-kotlin-codegen", version.ref = "moshiVersion" }
+outlinetextview = { module = "com.github.iamBedant:OutlineTextView", version.ref = "outlinetextviewVersion" }
+perf-plugin = { module = "com.google.firebase:perf-plugin", version.ref = "perfPluginVersion" }
+play-services-tasks = { module = "com.google.android.gms:play-services-tasks", version.ref = "playServicesTasksVersion" }
+progress-bar = { module = "com.github.slaviboy:ProgressBar", version.ref = "progressbarVersion" }
+logging-interceptor = { module = "com.squareup.okhttp3:logging-interceptor", version.ref = "okhttpInterceptorVersion" }
+lottie = { module = "com.airbnb.android:lottie", version.ref = "lottie" }
+material-v161 = { module = "com.google.android.material:material", version.ref = "materialVersion" }
+moshi = { module = "com.squareup.moshi:moshi", version.ref = "moshiVersion" }
+
+rxandroid = { module = "io.reactivex.rxjava3:rxandroid", version.ref = "rxandroidVersion" }
+rxjava = { module = "io.reactivex.rxjava3:rxjava", version.ref = "rxjavaVersion" }
+sdp-android = { module = "com.intuit.sdp:sdp-android", version.ref = "sdpAndroid" }
+androidx-room-compiler = { group = "androidx.room", name = "room-compiler", version.ref = "roomCompilerVersion" }
+androidx-room-common = { group = "androidx.room", name = "room-common", version.ref = "roomCommonVersion" }
+androidx-room-ktx = { group = "androidx.room", name = "room-ktx", version.ref = "roomKtxVersion" }
+xxpermissions = { module = "com.github.getActivity:XXPermissions", version.ref = "xxpermissionsVersion" }
+androidx-annotation-jvm = { group = "androidx.annotation", name = "annotation-jvm", version.ref = "annotationJvmVersion" }
+play-services-location = { group = "com.google.android.gms", name = "play-services-location", version.ref = "playServicesLocationVersion" }
+androidx-dynamicanimation-ktx = { group = "androidx.dynamicanimation", name = "dynamicanimation-ktx", version.ref = "dynamicanimationKtxVersion" }
+
+
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
 kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
 android-library = { id = "com.android.library", version.ref = "agp" }
-
