@@ -37,8 +37,8 @@ android {
 publishing {
     publications {
         create<MavenPublication>("mavenBom") {
-            groupId = "com.prox"
-            artifactId = "bom"
+            groupId = "com.github.datcorona"
+            artifactId = "proxbom"
             version = "1.0.0"
 
 //            afterEvaluate {

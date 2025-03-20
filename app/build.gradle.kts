@@ -38,6 +38,13 @@ android {
 dependencies {
 
     implementation(project (":bom"))
+//    implementation("com.prox:bom:1.0.0")
+////    implementation("com.github.bumptech.glide:glide")
+//    implementation("com.squareup.retrofit2:retrofit")
+//    implementation("com.squareup.okhttp3:okhttp")
+//    implementation("androidx.core:core-ktx")
+//    implementation("androidx.lifecycle:lifecycle-runtime-ktx")
+
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
     implementation(libs.material)
