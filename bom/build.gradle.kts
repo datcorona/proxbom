@@ -39,7 +39,7 @@ publishing {
         create<MavenPublication>("mavenBom") {
             groupId = "com.github.datcorona"
             artifactId = "proxbom"
-            version = "1.0.0"
+            version = "1.0.1"
 
 //            afterEvaluate {
 //                from(components["release"]) // Thay "release" bằng "default"
