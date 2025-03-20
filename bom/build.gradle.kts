@@ -32,18 +32,23 @@ android {
     kotlinOptions {
         jvmTarget = "1.8"
     }
+    publishing {
+        singleVariant("release") {
+            withSourcesJar()
+            withJavadocJar()
+        }
+    }
 }
 
-publishing {
-    publications {
-        create<MavenPublication>("mavenBom") {
-            groupId = "com.prox"
-            artifactId = "bom"
-            version = "1.0.0"
-
-//            afterEvaluate {
-//                from(components["release"]) // Thay "release" bằng "default"
-//            }
+afterEvaluate {
+    publishing {
+        publications {
+            create<MavenPublication>("release") {
+                from(components["release"]) // Fix lỗi component not found
+                groupId = "com.github.datcorona"
+                artifactId = "proxbom"
+                version = "1.0.2"
+            }
         }
     }
 }
